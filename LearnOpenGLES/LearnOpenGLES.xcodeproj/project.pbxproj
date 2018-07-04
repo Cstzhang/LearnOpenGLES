@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6AA097B20EB80B10054889F /* test_image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B6AA097A20EB80B10054889F /* test_image.jpeg */; };
+		B6AA097D20EB926D0054889F /* for_test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B6AA097C20EB926D0054889F /* for_test.jpg */; };
 		B6CC5890209D54E300FC812B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC588F209D54E300FC812B /* AppDelegate.m */; };
 		B6CC5893209D54E300FC812B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CC5892209D54E300FC812B /* ViewController.m */; };
 		B6CC5896209D54E300FC812B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6CC5894209D54E300FC812B /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6AA097A20EB80B10054889F /* test_image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test_image.jpeg; sourceTree = "<group>"; };
+		B6AA097C20EB926D0054889F /* for_test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = for_test.jpg; sourceTree = "<group>"; };
 		B6CC588B209D54E300FC812B /* LearnOpenGLES.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnOpenGLES.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6CC588E209D54E300FC812B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B6CC588F209D54E300FC812B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 		B6CC588D209D54E300FC812B /* LearnOpenGLES */ = {
 			isa = PBXGroup;
 			children = (
+				B6AA097C20EB926D0054889F /* for_test.jpg */,
+				B6AA097A20EB80B10054889F /* test_image.jpeg */,
 				B6CC588E209D54E300FC812B /* AppDelegate.h */,
 				B6CC588F209D54E300FC812B /* AppDelegate.m */,
 				B6CC5891209D54E300FC812B /* ViewController.h */,
@@ -129,6 +135,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6CC589B209D54E400FC812B /* LaunchScreen.storyboard in Resources */,
+				B6AA097D20EB926D0054889F /* for_test.jpg in Resources */,
+				B6AA097B20EB80B10054889F /* test_image.jpeg in Resources */,
 				B6CC5898209D54E400FC812B /* Assets.xcassets in Resources */,
 				B6CC5896209D54E300FC812B /* Main.storyboard in Resources */,
 			);
