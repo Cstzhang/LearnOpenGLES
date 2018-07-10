@@ -117,9 +117,9 @@ int main(int argc, const char * argv[]) {
 //    };
     float firstTriangle[] = {
         // 位置              // 颜色
-        0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f,   // 右下
-        -0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,   // 左下
-        0.0f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f    // 顶部
+        0.5f, 0.0f, 0.0f,  1.0f, 0.0f, 0.0f,   // 右下
+        -0.5f, 0.0f, 0.0f,  0.0f, 1.0f, 0.0f,   // 左下
+        0.0f,  -1.0f, 0.0f,  0.0f, 0.0f, 1.0f    // 顶部
     };
     
 
@@ -191,7 +191,8 @@ int main(int argc, const char * argv[]) {
 //        glUseProgram(shaderProgram);
         
         ourShader.use();
-        
+        float offset = 0.5f;
+        ourShader.setFloat("xOffset", offset);
         
         // 更新uniform颜色
 //        float timeValue = glfwGetTime();
