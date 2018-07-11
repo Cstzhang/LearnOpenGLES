@@ -66,7 +66,8 @@ int main(int argc, const char * argv[]) {
     
     // build and compile our shader program
     // ------------------------------------
-    Shader ourShader("/Users/bigfish/mine/LearnOpenGLES/transformations/三角形/3.3.shader.vs","/Users/bigfish/mine/LearnOpenGLES/transformations/三角形/3.3.shader.fs");
+    Shader ourShader("/Users/bigfish/mine/LearnOpenGLES/transformations_exercise/三角形/3.3.shader.vs","/Users/bigfish/mine/LearnOpenGLES/transformations_exercise/三角形/3.3.shader.fs");
+    
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
     float vertices[] = {
@@ -115,7 +116,7 @@ int main(int argc, const char * argv[]) {
     int width,height,nrChannels;
     stbi_set_flip_vertically_on_load(true); // tell stb_image.h to flip loaded texture's on the y-axis.
     // The FileSystem::getPath(...) is part of the GitHub repository so we can find files on any IDE/platform; replace it with your own image path.
-    unsigned char *data = stbi_load("/Users/bigfish/mine/LearnOpenGLES/transformations/三角形/container.jpg", &width, &height, &nrChannels, 0);
+    unsigned char *data = stbi_load("/Users/bigfish/mine/LearnOpenGLES/transformations_exercise/三角形/container.jpg", &width, &height, &nrChannels, 0);
     if (data) {
         glTexImage2D(GL_TEXTURE_2D,0,GL_RGB,width,height,0,GL_RGB,GL_UNSIGNED_BYTE,data);
         glGenerateMipmap(GL_TEXTURE_2D);
@@ -138,7 +139,7 @@ int main(int argc, const char * argv[]) {
     // load image, create texture and generate mipmaps
 //    stbi_set_flip_vertically_on_load(true); // tell stb_image.h to flip loaded texture's on the y-axis.
     // The FileSystem::getPath(...) is part of the GitHub repository so we can find files on any IDE/platform; replace it with your own image path.
-    data = stbi_load("/Users/bigfish/mine/LearnOpenGLES/transformations/三角形/awesomeface.png", &width, &height, &nrChannels, 0);
+    data = stbi_load("/Users/bigfish/mine/LearnOpenGLES/transformations_exercise/三角形/awesomeface.png", &width, &height, &nrChannels, 0);
     if (data) {
         glTexImage2D(GL_TEXTURE_2D,0,GL_RGB,width,height,0,GL_RGBA,GL_UNSIGNED_BYTE,data);
         glGenerateMipmap(GL_TEXTURE_2D);
@@ -175,20 +176,33 @@ int main(int argc, const char * argv[]) {
         
         //creat transformations
         glm::mat4 transform = glm::mat4(1.0f);
-        //缩放 0.5倍
+        //右下角移动
         transform = glm::translate(transform, glm::vec3(0.5f,-0.5f,0.0f));
-       
         //旋转90度 z轴
-        transform = glm::rotate(transform, (float)glfwGetTime(), glm::vec3(0.0f,0.0f,1.0f));
+        transform = glm::rotate(transform, -(float)glfwGetTime(), glm::vec3(0.0f,0.0f,1.0f));
         
         // get matrix's uniform location and set matrix
-        ourShader.use();
+//        ourShader.use();
         unsigned int transformLoc = glGetUniformLocation(ourShader.ID,"transform");
         glUniformMatrix4fv(transformLoc,1,GL_FALSE,glm::value_ptr(transform));
         
         //render container
         
         glBindVertexArray(VAO);
+        glDrawElements(GL_TRIANGLES,6,GL_UNSIGNED_INT,0);
+        
+        //second transformation
+        //---------------------
+        transform = glm::mat4(1.0f);// reset it to an identity matrix
+        //移动左上角
+        transform = glm::translate(transform, glm::vec3(-0.5f,0.5f,0.0f));
+        //缩放
+        float scaleAmount = sin(glfwGetTime())/2 + 0.5;
+        transform = glm::scale(transform, glm::vec3(scaleAmount,scaleAmount,scaleAmount));
+        glUniformMatrix4fv(transformLoc,1,GL_FALSE,&transform[0][0]);
+        // this time take the matrix value array's first element as its memory pointer value
+        
+        // now with the uniform matrix being replaced with new transformations, draw it again.
         glDrawElements(GL_TRIANGLES,6,GL_UNSIGNED_INT,0);
         
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)

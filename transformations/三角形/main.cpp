@@ -175,7 +175,7 @@ int main(int argc, const char * argv[]) {
         
         //creat transformations
         glm::mat4 transform = glm::mat4(1.0f);
-        //缩放 0.5倍
+        //移动到左下角
         transform = glm::translate(transform, glm::vec3(0.5f,-0.5f,0.0f));
        
         //旋转90度 z轴
