@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF1A830820F9A04100C8F702 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF1A830620F9A04100C8F702 /* Camera.cpp */; };
+		FF85EFEE20F307DF003CBA05 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF85EFED20F307DF003CBA05 /* main.cpp */; };
+		FF85EFF520F307F3003CBA05 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = FF85EFF420F307F3003CBA05 /* glad.c */; };
+		FF85EFF820F3088D003CBA05 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF85EFF720F3088D003CBA05 /* OpenGL.framework */; };
+		FF85EFFA20F30893003CBA05 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF85EFF920F30893003CBA05 /* GLUT.framework */; };
+		FF85EFFC20F308A3003CBA05 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FF85EFFB20F308A3003CBA05 /* libglfw.3.3.dylib */; };
+		FF85EFFE20F308CF003CBA05 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FF85EFFD20F308CF003CBA05 /* libGLEW.2.1.0.dylib */; };
+		FF85F00020F308FE003CBA05 /* libgltools.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FF85EFFF20F308FE003CBA05 /* libgltools.dylib */; };
+		FFEE67DB20F4502000DF9D7E /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FFEE67D920F4502000DF9D7E /* Shader.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF85EFE820F307DF003CBA05 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FF1539BC20F59C93006B559B /* awesomeface.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = awesomeface.png; sourceTree = "<group>"; };
+		FF1539BD20F59C94006B559B /* container.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = container.jpg; sourceTree = "<group>"; };
+		FF1539BE20F59C94006B559B /* stb_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		FF1A830620F9A04100C8F702 /* Camera.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		FF1A830720F9A04100C8F702 /* Camera.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Camera.hpp; sourceTree = "<group>"; };
+		FF85EFEA20F307DF003CBA05 /* 三角形 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "三角形"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF85EFED20F307DF003CBA05 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FF85EFF420F307F3003CBA05 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
+		FF85EFF720F3088D003CBA05 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		FF85EFF920F30893003CBA05 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		FF85EFFB20F308A3003CBA05 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../usr/local/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		FF85EFFD20F308CF003CBA05 /* libGLEW.2.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libGLEW.2.1.0.dylib; path = ../../../../../usr/local/Cellar/glew/2.1.0/lib/libGLEW.2.1.0.dylib; sourceTree = "<group>"; };
+		FF85EFFF20F308FE003CBA05 /* libgltools.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgltools.dylib; path = ../../../../../usr/local/lib/libgltools.dylib; sourceTree = "<group>"; };
+		FFEE67D920F4502000DF9D7E /* Shader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		FFEE67DA20F4502000DF9D7E /* Shader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Shader.hpp; sourceTree = "<group>"; };
+		FFEE67DF20F4B3CA00DF9D7E /* 3.3.shader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 3.3.shader.vs; sourceTree = "<group>"; };
+		FFEE67E020F4B3CA00DF9D7E /* 3.3.shader.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 3.3.shader.fs; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF85EFE720F307DF003CBA05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF85F00020F308FE003CBA05 /* libgltools.dylib in Frameworks */,
+				FF85EFFE20F308CF003CBA05 /* libGLEW.2.1.0.dylib in Frameworks */,
+				FF85EFFC20F308A3003CBA05 /* libglfw.3.3.dylib in Frameworks */,
+				FF85EFFA20F30893003CBA05 /* GLUT.framework in Frameworks */,
+				FF85EFF820F3088D003CBA05 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF85EFE120F307DF003CBA05 = {
+			isa = PBXGroup;
+			children = (
+				FF85EFEC20F307DF003CBA05 /* 三角形 */,
+				FF85EFEB20F307DF003CBA05 /* Products */,
+				FF85EFF620F3088D003CBA05 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF85EFEB20F307DF003CBA05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF85EFEA20F307DF003CBA05 /* 三角形 */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF85EFEC20F307DF003CBA05 /* 三角形 */ = {
+			isa = PBXGroup;
+			children = (
+				FF1539BC20F59C93006B559B /* awesomeface.png */,
+				FF1539BD20F59C94006B559B /* container.jpg */,
+				FF1539BE20F59C94006B559B /* stb_image.h */,
+				FFEE67E020F4B3CA00DF9D7E /* 3.3.shader.fs */,
+				FFEE67DF20F4B3CA00DF9D7E /* 3.3.shader.vs */,
+				FF85EFF420F307F3003CBA05 /* glad.c */,
+				FF85EFED20F307DF003CBA05 /* main.cpp */,
+				FFEE67DA20F4502000DF9D7E /* Shader.hpp */,
+				FFEE67D920F4502000DF9D7E /* Shader.cpp */,
+				FF1A830720F9A04100C8F702 /* Camera.hpp */,
+				FF1A830620F9A04100C8F702 /* Camera.cpp */,
+			);
+			path = "三角形";
+			sourceTree = "<group>";
+		};
+		FF85EFF620F3088D003CBA05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF85EFFF20F308FE003CBA05 /* libgltools.dylib */,
+				FF85EFFD20F308CF003CBA05 /* libGLEW.2.1.0.dylib */,
+				FF85EFFB20F308A3003CBA05 /* libglfw.3.3.dylib */,
+				FF85EFF920F30893003CBA05 /* GLUT.framework */,
+				FF85EFF720F3088D003CBA05 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF85EFE920F307DF003CBA05 /* 三角形 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF85EFF120F307DF003CBA05 /* Build configuration list for PBXNativeTarget "三角形" */;
+			buildPhases = (
+				FF85EFE620F307DF003CBA05 /* Sources */,
+				FF85EFE720F307DF003CBA05 /* Frameworks */,
+				FF85EFE820F307DF003CBA05 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "三角形";
+			productName = "三角形";
+			productReference = FF85EFEA20F307DF003CBA05 /* 三角形 */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF85EFE220F307DF003CBA05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = bigfish;
+				TargetAttributes = {
+					FF85EFE920F307DF003CBA05 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = FF85EFE520F307DF003CBA05 /* Build configuration list for PBXProject "三角形" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FF85EFE120F307DF003CBA05;
+			productRefGroup = FF85EFEB20F307DF003CBA05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF85EFE920F307DF003CBA05 /* 三角形 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF85EFE620F307DF003CBA05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF1A830820F9A04100C8F702 /* Camera.cpp in Sources */,
+				FF85EFEE20F307DF003CBA05 /* main.cpp in Sources */,
+				FFEE67DB20F4502000DF9D7E /* Shader.cpp in Sources */,
+				FF85EFF520F307F3003CBA05 /* glad.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FF85EFEF20F307DF003CBA05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FF85EFF020F307DF003CBA05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FF85EFF220F307DF003CBA05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "$(gl_header)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(gl_lib)",
+					/usr/local/Cellar/glew/2.1.0/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF85EFF320F307DF003CBA05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = "$(gl_header)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(gl_lib)",
+					/usr/local/Cellar/glew/2.1.0/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF85EFE520F307DF003CBA05 /* Build configuration list for PBXProject "三角形" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF85EFEF20F307DF003CBA05 /* Debug */,
+				FF85EFF020F307DF003CBA05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF85EFF120F307DF003CBA05 /* Build configuration list for PBXNativeTarget "三角形" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF85EFF220F307DF003CBA05 /* Debug */,
+				FF85EFF320F307DF003CBA05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF85EFE220F307DF003CBA05 /* Project object */;
+}
